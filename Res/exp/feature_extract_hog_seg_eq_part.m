@@ -10,8 +10,8 @@ field = {'x1', 'x2', '', 'x4', '', 'x6', 'x7', ...
     '', 'x17', '', '', '', '', '', 'x23', 'x24'};
 
 % lbp para
-low = 10;
-high = 10;
+low = 3;
+high = 17;
 img_sz = 160;
 
 sl = 20;
@@ -47,8 +47,9 @@ end
 
 
 
-
-for k = {'d_quarter'}%{'up','down'}
+reg = {'d_quarter','u_quarter'};
+parfor p = 1:2
+	k = {reg{p}};
 	feat_A = [];
 	feat_E = [];
 	label = [];
