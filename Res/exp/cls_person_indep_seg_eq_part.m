@@ -2,10 +2,10 @@
 
 clc; clear; close all;
 addpath('./util');
-low = 10;
-high = 10;
+low = 3;
+high = 17;
 framenum = 20;
-rg = 'd_quarter';
+rg = 'u_quarter';
 ref =  containers.Map();
 ref('up') = [1 2 4 6 7];
 ref('u_quarter') = [1 2 4 6 7];
