@@ -120,5 +120,5 @@ for k = ref(rg)%[1 2 4 6 7 10 12 14 15 17 23 24]
 	f1 = precission*recall*2/(precission+recall);
 	fprintf('overall accuracy: %.4f\nf1: %.4f\n',cr,f1);
 	mkdir(sprintf('./seg_eyebrow_eq_part_%d_threshold_%d_%d/result',framenum,low,high));
-	save(sprintf('./seg_eyebrow_eq_part_%d_threshold_%d_%d/result/au%02d_cls_%s_%s_%s_[%.1f]_f1_[%f].mat',framenum,low,high,k,f_name,A_feature,rg,cr*100,f1),'cr')
+	save(sprintf('./seg_eyebrow_eq_part_%d_threshold_%d_%d/result/au%02d_cls_%s_%s_%s_[%.2f]_f1_[%.2f].mat',framenum,low,high,k,f_name,A_feature,rg,cr*100,f1*100),'cr')
 end
